@@ -8,23 +8,30 @@
   <title>Technology Hub</title>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid" id="home-container">
     <div class="row">
-      <div class="col col-sm-2 col-md-2 col-lg-1" id="navbar">
-        <nav class="nav flex-column flex-md-row">
-          <a class="nav-link" href="index.html">
-            <img src="images/logo-removebg-preview.png" class="img-fluid d-none d-sm-block" width="100" height="auto" alt="logo" id="logoBS">
+      <div class="col-md-2 col-lg-1 px-0">
+        <nav class="navbar navbar-expand-sm navbar-light flex-column h-md-100 border border-dark">
+          <a class="navbar-brand m-0" href="index.html">
+            <img src="images/logo.png" alt="logo" width="100" height="auto" id="logo">
           </a>
-          <a class="nav-link text-light" href="index.html">Home</a>
-          <a class="nav-link text-light" href="software.html">Software</a>
-          <a class="nav-link text-light" href="hardware.html">Hardware</a>
-          <a class="nav-link text-light" href="keyboards.html">Teclados</a>
-          <a class="nav-link text-light" href="contact.html">Contacto</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropdown" aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-start" id="navDropdown">
+            <div class="navbar-nav flex-column">
+              <a class="nav-link text-white" href="index.html">Home</a>
+              <a class="nav-link text-white" href="software.html">Software</a>
+              <a class="nav-link text-white" href="hardware.html">Hardware</a>
+              <a class="nav-link text-white" href="keyboards.html">Teclados</a>
+              <a class="nav-link text-white" href="contact.html">Contacto</a>
+            </div>
+          </div>
         </nav>
       </div>
-      <div class="col col-sm-10 col-md-10 col-lg-11">
+      <div class="col-md-10 col-lg-11">
         <div class="row justify-content-center bg-secondary" id="header">
-          <h1>Technology Hub</h1>
+          <h2 class="animation-title py-2 my-0">Technology Hub</h2>
         </div>
         <div class="row">
           <div class="col presentation d-flex align-items-center justify-content-center">
@@ -36,7 +43,7 @@
         </div>
         <div class="row py-2">
           <div class="col">
-            <h2 class="latest-news font-bold text-center">ÚLTIMAS NOTICIAS</h2>
+            <h2 class="latest-news font-bold text-center animation-title">ÚLTIMAS NOTICIAS</h2>
             <hr>
           </div>
         </div>
